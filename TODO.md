@@ -1,0 +1,4 @@
+- [ ] Update projects.ts to add dynamic project data with GitHub Pages URLs and screenshot images
+- [ ] Update projects.html to use *ngFor for dynamic cards and make cards clickable to open in new tab
+- [ ] Update projects.css if needed for clickable cards
+- [ ] Test the functionality

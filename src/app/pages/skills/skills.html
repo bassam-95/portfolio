@@ -1,0 +1,25 @@
+<section class="skills-section">
+  <div class="skills-container">
+    <div class="skills-header">
+      <h1>My Skills</h1>
+      <p>Technologies and tools I work with to build amazing experiences</p>
+    </div>
+    
+    <div class="skills-grid">
+      <div class="skill-card" *ngFor="let skill of skills">
+        <div class="skill-icon">
+          <span class="skill-icon-text">{{ skill.icon }}</span>
+        </div>
+        <h3 class="skill-title">{{ skill.name }}</h3>
+        <p class="skill-description">{{ skill.description }}</p>
+        
+        <div class="skill-progress-container">
+          <div class="skill-level">
+            <div class="skill-progress" [style.width.%]="skill.progress"></div>
+          </div>
+          <span class="skill-percentage">{{ skill.progress }}%</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

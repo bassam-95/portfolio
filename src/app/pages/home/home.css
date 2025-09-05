@@ -1,0 +1,28 @@
+.header-container {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Remove background image and overlay since global gradient is applied */
+  .header-container::before {
+    display: none;
+  }
+  
+  /* Ensure content appears properly */
+  .header-container > * {
+    position: relative;
+    z-index: 2;
+  }
+  
+  app-animation1 {
+    position: relative;
+    z-index: 2;
+  }
