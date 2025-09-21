@@ -5,16 +5,18 @@ import { Footer } from './components/footer/footer';
 import { Home } from "./pages/home/home";
 import { About } from "./pages/about/about";
 import { Skills } from "./pages/skills/skills";
+import { Services } from "./pages/services/services";
 import { Contact } from "./pages/contact/contact";
 import { Projects } from "./pages/projects/projects";
+import { Testimonials } from "./pages/testimonials/testimonials";
 
 
 @Component({
   selector: 'app-root',
-  imports: [Header, Footer, Home, About, Skills, Contact,Projects],
+  imports: [Header, Home, About, Skills, Services, Contact, Projects, Testimonials],
   templateUrl: './app.html',
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('portfolio');
+  protected readonly title = signal('Bassam Mohamed - Angular Developer');
 }

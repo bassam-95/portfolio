@@ -1,0 +1,57 @@
+<section class="testimonials-section">
+  <div class="testimonials-container">
+    <div class="testimonials-header">
+      <h1>What Clients Say</h1>
+      <p>Don't just take my word for it - hear from satisfied clients</p>
+    </div>
+
+    <div class="testimonials-grid">
+      <div class="testimonial-card" *ngFor="let testimonial of testimonials">
+        <div class="testimonial-content">
+          <div class="quote-icon">
+            <i class="fas fa-quote-left"></i>
+          </div>
+          <p class="testimonial-text">"{{ testimonial.content }}"</p>
+        </div>
+        
+        <div class="testimonial-rating">
+          <div class="stars">
+            <i class="fas fa-star" *ngFor="let star of getStars(testimonial.rating)"></i>
+          </div>
+        </div>
+        
+        <div class="testimonial-author">
+          <div class="author-info">
+            <h4 class="author-name">{{ testimonial.name }}</h4>
+            <p class="author-role">{{ testimonial.role }}</p>
+            <p class="author-company">{{ testimonial.company }}</p>
+            <p class="project-name">{{ testimonial.project }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="testimonials-footer">
+      <div class="stats">
+        <div class="stat-item">
+          <h3>50+</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+          <h3>100%</h3>
+          <p>Client Satisfaction</p>
+        </div>
+        <div class="stat-item">
+          <h3>24/7</h3>
+          <p>Support Available</p>
+        </div>
+        <div class="stat-item">
+          <h3>2+</h3>
+          <p>Years Experience</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+

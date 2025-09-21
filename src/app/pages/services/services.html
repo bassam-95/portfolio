@@ -1,0 +1,45 @@
+<section class="services-section">
+  <div class="services-container">
+    <div class="services-header">
+      <h1>Services & Pricing</h1>
+      <p>Professional Angular development services tailored to your needs</p>
+    </div>
+
+    <div class="services-grid">
+      <div class="service-card" *ngFor="let service of services" [class.popular]="service.popular">
+        <div class="service-header">
+          <h3>{{ service.title }}</h3>
+          <div class="service-badge" *ngIf="service.popular">Most Popular</div>
+        </div>
+        
+        <div class="service-price">
+          <span class="price">{{ service.price }}</span>
+          <span class="duration">{{ service.duration }}</span>
+        </div>
+        
+        <p class="service-description">{{ service.description }}</p>
+        
+        <ul class="service-features">
+          <li *ngFor="let feature of service.features">
+            <i class="fas fa-check"></i>
+            {{ feature }}
+          </li>
+        </ul>
+        
+        <button class="service-btn" (click)="contactForQuote(service)">
+          Get Quote
+        </button>
+      </div>
+    </div>
+
+    <div class="services-footer">
+      <p>All projects include free consultation and project planning. Custom pricing available for large projects.</p>
+      <div class="contact-info">
+        <p><strong>Ready to start your project?</strong></p>
+        <a href="mailto:bassam251295@gmail.com" class="contact-btn">Contact Me Today</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
